@@ -1,0 +1,40 @@
+<html>
+	    <head>
+	        <meta charset='utf-8' />
+	    </head>
+	       <body>
+	           <script>
+	            var n = 0;
+	            var i = 0;
+	            var arr = [];
+	            var max = 0;
+	            var min = 0;
+	            var str = prompt (" Введите строку ", "");
+	            str = str.replace(/[^\w\s]|_/g, "")
+	                     .replace(/\s+/g, " ");
+	            s1 = str.split(' ');
+	            l = s1.length;
+	            alert (" количество слов в строке " + l);
+	             for (i in s1){
+	                 arr.push(s1[i].length);
+	             }
+	             for (i in s1){
+	                 if (arr[i] > n){
+	                     n = arr[i];
+	                     max = i;
+	                 }
+	                }
+	                for (i in s1){
+	                 if (arr[i] < n){
+	                     n = arr[i];
+	                     min = i;
+	                 }
+	                }
+	                var m = 0;
+	                for (i in arr){
+	                 m = m + arr[i];
+	                }
+	             alert (" самая длинная строка " + arr[max] + "  символов " + " самая короткая строка " + arr[min] + "  символов " + m/l + " средняя длина слова" );
+	           </script>
+	     </body>
+	</html>
