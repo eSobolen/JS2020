@@ -1,0 +1,41 @@
+<html>
+	    <head>
+	        <meta charset='utf-8' />
+	    </head>
+	       <body>
+	           <script>
+	             var str = prompt('Введите строку');
+	             a = str.indexOf('@'); 
+	             l = str.length;
+	             s2 = str.slice(a+1);
+	             d = str.indexOf('.');
+	             s3 = str.slice(d+1);
+	             s4 = str.slice(a,d).length
+	            if(a == -1){
+	                alert('Строка введена неверно '); 
+	            } else {
+	                if (l <= 6 ){
+	                     alert('Строка введена неверно ');   
+	                } else {
+	                    if (d == -1 ){
+	                            alert('Строка введена неверно ');    
+	                    }
+	                      else { 
+	                         if (s3.length < 2 ){
+	                         alert('Строка введена неверно ');    
+	                   }
+	                    else {
+	                        if ((s4 - 1) < 1 ) { 
+	                         alert('Строка введена неверно ');} 
+	                         else{  
+	                            alert('Строка введена верно ');    
+	                    }
+	                      
+	            }
+	            }
+	       }
+	    }
+	
+	           </script>
+	     </body>
+	</html>
