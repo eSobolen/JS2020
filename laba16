@@ -1,0 +1,14 @@
+<head>
+	    <meta charset="utf-8" />
+	</head>
+	
+	<body>
+	    <script type='text/javascript'>
+	        var V0 = prompt('Введите Vo');
+	        var t = prompt('Введите t');
+	        var g = 9.8;
+	        alert("Ответ: " + (Math.asin((g * t) / (2 * V0)).toFixed(5)));
+	    </script>
+	</body>
+	
+	</html>
