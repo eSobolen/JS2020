@@ -1,0 +1,27 @@
+<html>
+	 <head><meta charset='utf-8' />
+	 </head>
+	    <body>
+	        <script>
+	         var x1 = parseInt(prompt(' vvedite ves 1 gantely '));
+	         var x2 = parseInt(prompt(' vvedite ves 2 gantely '));
+	         var x3 = parseInt(prompt(' vvedite ves 3 gantely '));
+	         var y = x1 + x2 + x3;
+	        alert ('sumarny ves ' + y );
+	         if (x1 >= x2 && x1 >= x3) {
+	          alert ('gantelya  ' + x1 + ' kg samaya tyajelaya ');
+	        } else if (x2 >= x1 && x2 >= x3 ){
+	             alert ('gantelya  ' + x2 + ' kg samaya tyajelaya ');
+	        } else if (x3 >= x2 && x3 >= x1 ){
+	            alert ('gantelya  ' + x3 + ' kg samaya tyajelaya ');
+	        }
+	        if (x1 <= x2 && x1 <= x3) {
+	          alert ('gantelya ' + x1 + ' kg samaya lygkaya ');
+	        } else if (x2 <= x1 && x2 <= x3 ){
+	             alert ('gantelya ' + x2 + ' kg samaya lygkaya ');
+	        } else if (x3 <= x2 && x3 <= x1 ){
+	            alert ('gantelya ' + x3 + ' kg samaya lygkaya ');
+	        }
+	        </script>
+	  </body>
+	</html>
