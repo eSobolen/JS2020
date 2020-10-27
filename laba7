@@ -1,0 +1,12 @@
+<html>
+	    <head>
+	        <meta charset='utf-8' />
+	    </head>
+	       <body>
+	           <script>
+	               var x = parseFloat(prompt('введите первое сопротивление'));
+	               var y = parseFloat(prompt('введите второе сопротивление'));
+	               alert(' последовательное соединение : ' + (x+y) + ' паралельное : ' + ((x*y)/(x+y)) );
+	           </script>
+	     </body>
+	   </html>
