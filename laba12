@@ -1,0 +1,20 @@
+<html>
+	    <head>
+	        <meta charset='utf-8' />
+	    </head>
+	       <body>
+	           <script>
+	             var str = prompt('Введите строку');
+	             str = str.replace(/\s/g, '');
+	             var a = str.split('').reverse().join('');
+	            switch (str == a) {
+	             case true:
+	                alert('строка палиндром') 
+	                break
+	             case false:
+	                alert('Строка не палиндром') 
+	                break
+	            }
+	           </script>
+	     </body>
+	</html>
