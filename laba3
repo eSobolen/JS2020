@@ -1,0 +1,24 @@
+<html>
+	 <head>
+	     <meta charset='utf-8' />
+	 </head>
+	    <body>
+	        <script>
+	         var y = prompt('введите вашу фамилию ');
+	         var n = y.length;
+	         var ya = y.split('');
+	         var g = ('уеёыаоэяиюЮИЯЭОАЫЕУ');
+	         var ga = g.split('');
+	         var s = 0;
+	         for ( var x = 0 ; x < n ; x++ ) {
+	            for (var c = 0 ; c < 21 ; c++ ) {    
+	               if (ya[x] == ga[c]){
+	               s = s + 1;
+	       }
+	       }
+	       }
+	          alert ('в вашей фамилии ' + s + ' гласных');  
+	          alert ('в вашей фамилии ' +  (n - s) + ' согласных');    
+	        </script>
+	  </body>
+	</html>
